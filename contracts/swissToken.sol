@@ -8,7 +8,7 @@ contract SwissToken is ERC20, Ownable {
     constructor() ERC20("SWISSTOKEN", "STK") {
     }
 
-    function mint(address to, uint256 amount) public onlyOwner {
+    function mint(address to, uint256 amount) public onlyOwner{
         _mint(to, amount);
     }
 }
