@@ -8,8 +8,7 @@ describe("SwissToken", function () {
 
   this.beforeEach(async () => {
     [owner] = await ethers.getSigners();
-    // const contractFactory = await hre.ethers.getContractFactory("SwissToken");
-    // contract = contractFactory.attach(contractAddress.address);
+   
 
     contract = await ethers.getContractAt("SwissToken", address, owner);
   });

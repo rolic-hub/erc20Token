@@ -10,7 +10,6 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
 
   await deploy("SwissToken", {
     from: deployer,
-   // args: "0x",
     log: true,
   });
 
@@ -18,5 +17,3 @@ module.exports = async ({ getNamedAccounts, deployments }) => {
     "----------------------------------deployed swiss token contract ---------------------------"
   );
 };
-
-module.exports.tags = ["all"]
